@@ -1,0 +1,8 @@
+function myFunction() {
+	var newDiv = document.createElement("div");
+	var newContent = document.createTextNode("Hello");
+
+	newDiv.appendChild(newContent);
+
+	document.getElementById("contain").appendChild(newDiv);
+}
