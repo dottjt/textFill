@@ -1,2 +1,2 @@
 # textFill
-A pseudo text game I created using JavaScript, CSS and HTML. 
+A pseudo text game I created using HTML, CSS and JavaScript. 
