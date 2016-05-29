@@ -1,6 +1,5 @@
 var createGrid = function() { 
 	for (var i = 0; i < 2000; i++) {  	
-		//create DIV and put "X" inside it
 		var newDiv = document.createElement("p"); var newContent = document.createTextNode("X"); newDiv.appendChild(newContent);
 		
 	 	// append DIV with "X" to contain DIV, with class "hello" + number 
@@ -19,15 +18,14 @@ createGrid();
 var index = function(elem) { 
 	
 	var arry = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	elem
 	arry.indexOf("A")
 
 }
 
 // Many classes selected via ".hello" + 1
+// var randNo = Math.floor(Math.random() * 2000);
 
-var randNo = Math.floor(Math.random() * 2000);
-// fuck yes, I got it to work with different scope!!!!!!
+
 function selectori(i) {
 	var elem = document.querySelector(".hello" + i);
 			console.log(elem)
@@ -40,7 +38,7 @@ function selectori(i) {
 		}
 		// okay, all good, however now I need it to loop over just the same letter.
 		var tim = document.createTextNode(arry[tmp]);
-		elem.appendChild(tim);
+		elem = tim;
 				// transform so that it goes through 
 	}, false)
 }
