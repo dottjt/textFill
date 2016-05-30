@@ -1,4 +1,5 @@
 # textFill
+<<<<<<< HEAD
 A pseudo text game I created using JavaScript, CSS and HTML. 
 
 You use the mouse to hover over a huge grid of text, which changes the text in various ways. There is also a game within the grid, where a random text element is allocated "special", you must click on it. 
@@ -72,3 +73,6 @@ FAIL test5_1.js - Combine with test4_1.js to make complete solution. Doesn't wor
 // what I might have to do is once everything has been created, make a seperate function that randomly chooses an element and makes it change, for the "special element to be clicked".
 
 // how can I make it so that the width and height of 
+=======
+A pseudo text game I created using HTML, CSS and JavaScript. 
+>>>>>>> c77eaf64a037c0b39681917b36b8523b9e8451cf
