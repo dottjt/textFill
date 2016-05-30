@@ -1,3 +1,5 @@
+// largely test functions, not useless, however legacy.
+
 var createGrid = function() { 
 	for (var i = 0; i < 2000; i++) {  	
 		var newDiv = document.createElement("p"); var newContent = document.createTextNode("X"); newDiv.appendChild(newContent);
@@ -18,7 +20,7 @@ createGrid();
 var index = function(elem) { 
 	
 	var arry = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	arry.indexOf("A")
+	arry.indexOf("A");
 
 }
 
@@ -32,13 +34,6 @@ function selectori(i) {
 
 	elem.addEventListener('mouseover', function() { 
 		elem.classList.add("yo");
-		var tmp = i;
-		if (tmp > 26) {
-			tmp = tmp % 26;
-		}
-		// okay, all good, however now I need it to loop over just the same letter.
-		var tim = document.createTextNode(arry[tmp]);
-		elem = tim;
 				// transform so that it goes through 
 	}, false)
 }

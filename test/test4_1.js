@@ -1,6 +1,4 @@
-// Combining createGrid with alphabet iteration. 
-// 30-05-16 OMMMGGGGG Can't believe I got it done in a morning :) Test Driven design is sooooo good. 
-// 
+
 
 var createGrid = function() { 
 	for (var i = 0; i < 300; i++) {  	
@@ -49,15 +47,30 @@ function iter() {
 	if (alphabetCounter === 26) {
 		alphabetCounter = 0;
 	}
+
 	return
-	console.log(alphabet[alphabetCounter])
 	}
 }
 
 
-setInterval(iter, 1000)
+setInterval(iter, 300)
 
-// hmmm doesn't work, but 
+
+
+function selectori(i) {
+	var elem = document.querySelector(".hello" + i);
+			console.log(elem)
+
+	elem.addEventListener('mouseover', function() { 
+		elem.classList.add("yo");
+				// transform so that it goes through 
+	}, false)
+}
+
+for (var i = 0; i < 300; i++) {	
+	selectori(i);
+};
+
 
 
 
